@@ -1,3 +1,6 @@
+# Nani's Cake — Pink & White Website Code
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,16 +21,14 @@
 
     body{
       font-family:'Poppins',sans-serif;
-      background:#0f0f0f;
-      color:white;
+      background:#fff7fb;
+      color:#333;
       overflow-x:hidden;
     }
 
     section{
       padding:80px 8%;
     }
-
-    /* NAVBAR */
 
     nav{
       width:100%;
@@ -39,13 +40,14 @@
       justify-content:space-between;
       align-items:center;
       z-index:1000;
-      background:rgba(0,0,0,0.4);
+      background:rgba(255,255,255,0.85);
       backdrop-filter:blur(10px);
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
     }
 
     nav h1{
       font-size:28px;
-      color:#f7c59f;
+      color:#ff4f8b;
       font-weight:700;
     }
 
@@ -57,20 +59,19 @@
 
     nav ul li a{
       text-decoration:none;
-      color:white;
+      color:#444;
+      font-weight:500;
       transition:.3s;
     }
 
     nav ul li a:hover{
-      color:#f7c59f;
+      color:#ff4f8b;
     }
-
-    /* HERO */
 
     .hero{
       height:100vh;
       background:
-      linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),
+      linear-gradient(rgba(255,255,255,.3),rgba(255,255,255,.4)),
       url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1400&auto=format&fit=crop');
       background-size:cover;
       background-position:center;
@@ -86,32 +87,32 @@
       font-size:70px;
       line-height:1.1;
       margin-bottom:20px;
+      color:#ff2f75;
     }
 
     .hero p{
       font-size:18px;
-      color:#ddd;
+      color:#555;
       margin-bottom:30px;
     }
 
     .btn{
       padding:14px 30px;
-      background:#f7c59f;
-      color:black;
+      background:#ff4f8b;
+      color:white;
       border:none;
       border-radius:40px;
       font-weight:600;
       cursor:pointer;
       text-decoration:none;
       transition:.3s;
+      display:inline-block;
     }
 
     .btn:hover{
       transform:translateY(-3px);
-      background:white;
+      background:#ff2f75;
     }
-
-    /* ABOUT */
 
     .about{
       display:grid;
@@ -125,20 +126,19 @@
       border-radius:25px;
       height:500px;
       object-fit:cover;
+      box-shadow:0 10px 30px rgba(255,79,139,0.2);
     }
 
     .about-text h3{
       font-size:50px;
       margin-bottom:20px;
-      color:#f7c59f;
+      color:#ff4f8b;
     }
 
     .about-text p{
       line-height:1.8;
-      color:#ccc;
+      color:#555;
     }
-
-    /* CAKES */
 
     .cakes-title{
       text-align:center;
@@ -147,7 +147,7 @@
 
     .cakes-title h3{
       font-size:50px;
-      color:#f7c59f;
+      color:#ff4f8b;
     }
 
     .cake-grid{
@@ -157,10 +157,11 @@
     }
 
     .cake-card{
-      background:#1a1a1a;
+      background:white;
       border-radius:25px;
       overflow:hidden;
       transition:.4s;
+      box-shadow:0 8px 25px rgba(255,79,139,0.12);
     }
 
     .cake-card:hover{
@@ -180,40 +181,37 @@
     .cake-info h4{
       font-size:24px;
       margin-bottom:10px;
+      color:#ff2f75;
     }
 
     .cake-info p{
-      color:#bbb;
+      color:#666;
       margin-bottom:15px;
     }
 
     .price{
-      color:#f7c59f;
+      color:#ff4f8b;
       font-size:20px;
       font-weight:600;
     }
 
-    /* CONTACT */
-
     .contact{
       text-align:center;
-      background:#151515;
+      background:white;
       border-radius:30px;
+      box-shadow:0 10px 30px rgba(255,79,139,0.12);
+      padding:60px 30px;
     }
 
     .contact h3{
       font-size:45px;
       margin-bottom:20px;
-      color:#f7c59f;
+      color:#ff4f8b;
     }
 
     .contact p{
-      color:#ccc;
+      color:#666;
       margin-bottom:30px;
-    }
-
-    .contact a{
-      text-decoration:none;
     }
 
     footer{
@@ -241,8 +239,6 @@
 
 <body>
 
-  <!-- NAVBAR -->
-
   <nav>
     <h1>Nani's Cake</h1>
 
@@ -253,24 +249,20 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-
   <section class="hero">
 
     <div class="hero-content">
-      <h2>Handcrafted Cakes Made With Love</h2>
+      <h2>Sweet Moments Start Here</h2>
 
       <p>
-        Freshly baked premium cakes for birthdays, weddings,
-        celebrations & sweet moments.
+        Beautiful handcrafted cakes for birthdays,
+        weddings, anniversaries & every celebration.
       </p>
 
       <a href="#cakes" class="btn">Explore Cakes</a>
     </div>
 
   </section>
-
-  <!-- ABOUT -->
 
   <section class="about" id="about">
 
@@ -280,22 +272,19 @@
       <h3>About Nani's Cake</h3>
 
       <p>
-        At Nani's Cake, we believe every celebration deserves
-        something special. Our cakes are made with premium
-        ingredients, beautiful designs, and lots of love.
-        From chocolate cakes to custom celebration cakes,
-        we create sweet memories for every occasion.
+        At Nani's Cake, every cake is crafted with love,
+        premium ingredients, and aesthetic designs.
+        We create delicious custom cakes that make your
+        special moments unforgettable.
       </p>
     </div>
 
   </section>
 
-  <!-- CAKES -->
-
   <section id="cakes">
 
     <div class="cakes-title">
-      <h3>Our Signature Cakes</h3>
+      <h3>Popular Cakes</h3>
     </div>
 
     <div class="cake-grid">
@@ -304,8 +293,8 @@
         <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1200&auto=format&fit=crop">
 
         <div class="cake-info">
-          <h4>Chocolate Truffle</h4>
-          <p>Rich chocolate layers with creamy ganache.</p>
+          <h4>Chocolate Cake</h4>
+          <p>Rich creamy chocolate delight.</p>
           <div class="price">₹799</div>
         </div>
       </div>
@@ -315,7 +304,7 @@
 
         <div class="cake-info">
           <h4>Red Velvet</h4>
-          <p>Soft velvet sponge with cream cheese frosting.</p>
+          <p>Soft sponge with cream cheese frosting.</p>
           <div class="price">₹999</div>
         </div>
       </div>
@@ -325,7 +314,7 @@
 
         <div class="cake-info">
           <h4>Fruit Cake</h4>
-          <p>Fresh fruits layered with whipped cream.</p>
+          <p>Fresh fruits with whipped cream layers.</p>
           <div class="price">₹899</div>
         </div>
       </div>
@@ -334,21 +323,18 @@
 
   </section>
 
-  <!-- CONTACT -->
-
   <section id="contact">
 
     <div class="contact">
 
-      <h3>Order Your Cake Today</h3>
+      <h3>Order Your Dream Cake</h3>
 
       <p>
-        Contact us for custom cakes, birthdays, weddings,
-        anniversaries & special events.
+        DM us or order directly on WhatsApp.
       </p>
 
       <a href="https://wa.me/919999999999" class="btn">
-        Order on WhatsApp
+        Order Now
       </a>
 
     </div>
@@ -356,8 +342,11 @@
   </section>
 
   <footer>
-    © 2026 Nani's Cake — Crafted with Love
+    © 2026 Nani's Cake — Made With Love
   </footer>
 
 </body>
 </html>
+```
+
+Replace your old `index.html` code with this new pink & white version.
